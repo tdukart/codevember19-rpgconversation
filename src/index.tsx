@@ -1,3 +1,5 @@
+/* global document */
+
 import * as React from 'react';
 import { render } from 'react-dom';
 import styled from '@emotion/styled';
@@ -9,7 +11,7 @@ const ConversationContainer = styled.div({
   bottom: 0,
   left: 0,
   right: 0,
-  display: 'flex'
+  display: 'flex',
 });
 
 const ConservationDialog = styled.div({
@@ -19,7 +21,7 @@ const ConservationDialog = styled.div({
   flex: 1,
   height: '250px',
   margin: '1em',
-  paddingTop: '1.325em'
+  paddingTop: '1.325em',
 });
 
 type SpeakerProps = { speakerPosition?: 'left' | 'right' };
@@ -32,19 +34,17 @@ const Speaker = styled.div<SpeakerProps>(({ speakerPosition = 'left' }) => ({
   [speakerPosition]: '10%',
   height: '2em',
   background: '#fff',
-  top: '-.25em'
+  top: '-.25em',
 }));
 
-function App() {
-  return (
-    <div className="App">
-      <ConversationContainer>
-        <Speaker>Me</Speaker>
-        <ConservationDialog>hello world</ConservationDialog>
-      </ConversationContainer>
-    </div>
-  );
-}
+const App = (): React.ReactElement => (
+  <div className="App">
+    <ConversationContainer>
+      <Speaker>Me</Speaker>
+      <ConservationDialog>hello world</ConservationDialog>
+    </ConversationContainer>
+  </div>
+);
 
 const rootElement = document.getElementById('root');
 render(<App />, rootElement);
