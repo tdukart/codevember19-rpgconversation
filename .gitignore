@@ -54,13 +54,6 @@ typings/
 # dotenv environment variables file
 .env
 
-# gatsby files
-.cache/
-public
-
-# Generated redirect file.
-static/_redirects
-
 # Mac files
 .DS_Store
 

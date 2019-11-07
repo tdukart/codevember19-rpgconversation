@@ -6,6 +6,12 @@ import styled from '@emotion/styled';
 
 import './styles.css';
 
+/*
+Fonts:
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Big Shoulders Text', cursive;
+ */
+
 const ConversationContainer = styled.div({
   position: 'absolute',
   bottom: 0,
