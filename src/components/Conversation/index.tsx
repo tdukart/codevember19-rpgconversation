@@ -18,7 +18,7 @@ const ConservationDialog = styled.div({
   flex: 1,
   height: '250px',
   margin: '0 1em 1em 1em',
-  paddingTop: '1.325em',
+  padding: '1.325em .5em',
   background: '#fff',
 });
 
